@@ -104,7 +104,7 @@ local keys = {
       end)
    },
    {
-      key = '=',
+      key = '+',
       mods = mod.SUPER,
       action = wezterm.action_callback(function(window, _pane)
          local dimensions = window:get_dimensions()
