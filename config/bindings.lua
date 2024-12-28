@@ -60,7 +60,14 @@ local keys = {
    -- tabs --
    -- tabs: spawn+close
    { key = 't',          mods = mod.SUPER,     action = act.SpawnTab('DefaultDomain') },
-   { key = 'p',          mods = mod.SUPER,     action = wezterm.action.SpawnCommandInNewTab { args = { 'powershell' }, domain = { DomainName = 'local' } }},
+   {
+      key = 'p',
+      mods = mod.SUPER,
+      action = act.SpawnCommandInNewTab {
+         args = { platform.is_win and 'powershell' or 'bash' },
+         domain = { DomainName = 'local' }
+      }
+   },
    { key = 'w',          mods = mod.SUPER_REV, action = act.CloseCurrentTab({ confirm = false }) },
 
    -- tabs: navigation
