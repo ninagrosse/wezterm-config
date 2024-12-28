@@ -30,11 +30,12 @@ return {
    enable_tab_bar = true,
    hide_tab_bar_if_only_one_tab = true,
    use_fancy_tab_bar = false,
-   tab_max_width = 25,
+   tab_max_width = 40,
    show_tab_index_in_tab_bar = false,
    switch_to_last_active_tab_when_closing_tab = true,
 
    -- window
+   window_decorations = 'RESIZE',
    window_padding = {
       left = 0,
       right = 0,
