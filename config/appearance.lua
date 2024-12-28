@@ -1,5 +1,9 @@
 local gpu_adapters = require('utils.gpu-adapter')
 local backdrops = require('utils.backdrops')
+local platform = require('utils.platform')
+
+-- default window decorations on mac, resize only on windows and linux
+local window_decoration = platform.is_mac and 'TITLE | RESIZE' or 'RESIZE'
 
 return {
    max_fps = 120,
@@ -35,7 +39,9 @@ return {
    switch_to_last_active_tab_when_closing_tab = true,
 
    -- window
-   window_decorations = 'RESIZE',
+   window_decorations = window_decoration,
+   initial_cols = 145,
+   initial_rows = 40,
    window_padding = {
       left = 5,
       right = 5,
