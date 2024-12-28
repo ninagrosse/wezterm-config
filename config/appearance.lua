@@ -14,7 +14,7 @@ return {
    animation_fps = 120,
    cursor_blink_ease_in = 'EaseOut',
    cursor_blink_ease_out = 'EaseOut',
-   default_cursor_style = 'BlinkingBlock',
+   default_cursor_style = 'BlinkingBar',
    cursor_blink_rate = 650,
 
    -- color scheme
@@ -22,13 +22,14 @@ return {
 
    -- background
    background = backdrops:initial_options(false), -- set to true if you want wezterm to start on focus mode
+   window_background_opacity = 0.96,
 
    -- scrollbar
-   enable_scroll_bar = true,
+   enable_scroll_bar = false,
 
    -- tab bar
    enable_tab_bar = true,
-   hide_tab_bar_if_only_one_tab = false,
+   hide_tab_bar_if_only_one_tab = true,
    use_fancy_tab_bar = false,
    tab_max_width = 25,
    show_tab_index_in_tab_bar = false,
