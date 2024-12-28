@@ -74,17 +74,17 @@ end
 ---@return table
 function BackDrops:_create_opts()
    return {
-      {
-         source = { File = self.images[self.current_idx] },
-         horizontal_align = 'Center',
-      },
+      -- {
+      --    source = { File = self.images[self.current_idx] },
+      --    horizontal_align = 'Center',
+      -- },
       {
          source = { Color = '#1f1f28' },
          height = '120%',
          width = '120%',
          vertical_offset = '-10%',
          horizontal_offset = '-10%',
-         opacity = 0.96,
+         opacity = 0.9,
       },
    }
 end
@@ -142,7 +142,7 @@ function BackDrops:_set_focus_opt(window)
             width = '120%',
             vertical_offset = '-10%',
             horizontal_offset = '-10%',
-            opacity = 1,
+            opacity = 0.9,
          },
       },
       enable_tab_bar = window:effective_config().enable_tab_bar,
