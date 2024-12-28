@@ -37,8 +37,8 @@ return {
    -- window
    window_decorations = 'RESIZE',
    window_padding = {
-      left = 0,
-      right = 0,
+      left = 5,
+      right = 5,
       top = 10,
       bottom = 7.5,
    },
