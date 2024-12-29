@@ -2,8 +2,8 @@ local gpu_adapters = require('utils.gpu-adapter')
 local backdrops = require('utils.backdrops')
 local platform = require('utils.platform')
 
--- default window decorations on mac, resize only on windows and linux
-local window_decoration = platform.is_mac and 'TITLE | RESIZE' or 'RESIZE'
+-- default window decorations on mac & linux, resize only on windows (because of tiling window manager)
+local window_decoration = platform.is_win and 'RESIZE' or 'TITLE | RESIZE'
 
 return {
    max_fps = 120,
