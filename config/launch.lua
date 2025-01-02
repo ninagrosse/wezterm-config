@@ -6,7 +6,7 @@ local options = {
 }
 
 if platform.is_win then
-   options.default_prog = { 'ubuntu2404' }
+   options.default_prog = { 'wsl', '--cd', '~' }
    options.launch_menu = {
       { label = 'PowerShell', args = { 'powershell' } },
       { label = 'Command Prompt', args = { 'cmd' } },
