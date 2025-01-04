@@ -26,7 +26,7 @@ function BackDrops:init()
       current_idx = 1,
       images = {},
       images_dir = wezterm.config_dir .. '/backdrops/',
-      focus_color = '#1f1f28',
+      focus_color = '#1e1e2e',
       focus_on = false,
    }
    local backdrops = setmetatable(inital, self)
